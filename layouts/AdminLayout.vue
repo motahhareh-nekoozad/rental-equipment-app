@@ -1,43 +1,37 @@
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+
+// i18n composable
+const { t, locale } = useI18n();
+
+// Dark/Light mode state
+const isDark = ref(false);
+
+// Load saved theme on mount
+onMounted(() => {
+  isDark.value = localStorage.getItem("admin-theme") === "dark";
+  document.documentElement.classList.toggle("dark", isDark.value);
+  document.documentElement.setAttribute("dir", locale.value === "fa" ? "rtl" : "ltr");
+});
+
+
+</script>
+
 <template>
-  <div class="flex h-screen flex-col bg-baseBlack text-white" dir="rtl">
-
+  <div class="flex h-screen flex-col bg-bg text-text transition-colors">
     <!-- Header -->
-    <header class="flex items-center justify-center bg-baseBlack border-b border-gray-700 p-4 sticky top-0 z-50" >
-      <div class="flex items-center  space-x-2 rtl:space-x-reverse">
-        <img alt="Logo" class="h-8 w-8" />
-        <span class="text-xl font-bold text-gold">RentalGear</span>
-      </div>
-    </header>
+    <AdminHeader />
 
-    <!-- Main Content with Sidebar -->
-    <div class="flex flex-1 flex-row-reverse">
+    <!-- Main layout -->
+    <div class="flex flex-1 transition-all">
+      <!-- Sidebar -->
+      <AdminSidebar />
 
-      <!-- Main Content -->
-      <main class="flex-1 p-6 bg-baseBlack text-primary">
+      <!-- Main content -->
+      <main class="flex-1 p-6 bg-bg text-primary transition-colors">
         <NuxtPage />
       </main>
-
-      <!-- SideBar -->
-      <aside class="w-60 bg-baseBlack p-6 flex flex-col space-y-4 border-l border-gray-700">
-        <NuxtLink to="/admin/equipment"
-          class="py-2 px-4 rounded border border-transparent hover:border-gold hover:bg-baseBlack transition duration-300"
-          active-class="bg-primary border-gold text-baseBlack">
-          تجهیزات
-        </NuxtLink>
-
-        <NuxtLink to="/admin/users"
-          class="py-2 px-4 rounded border border-transparent hover:border-gold hover:bg-baseBlack transition duration-300"
-          active-class="bg-primary border-gold text-baseBlack">
-          کاربران
-        </NuxtLink>
-
-        <NuxtLink to="/admin/settings"
-          class="py-2 px-4 rounded border border-transparent hover:border-gold hover:bg-baseBlack transition duration-300"
-          active-class="bg-primary border-gold text-baseBlack">
-          تنظیمات
-        </NuxtLink>
-      </aside>
-
     </div>
   </div>
 </template>

@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 🌞 Light Theme */
+:root {
+  --color-primary: #fe7743;
+  --color-secondary: #1b2a49;
+  --color-bg: #ffffff;
+  --color-text: #000000;
+}
+
+/* 🌚 Dark Theme */
+.dark {
+  --color-primary: #ff4f0f;
+  --color-secondary: #000000;
+  --color-bg: #121212;
+  --color-text: #ffffff;
+}
+
+
+/* RTL styles */
+[dir="rtl"] .sidebar {
+  order: 2;
+  border-left: none;
+  border-right: 1px solid #ccc;
+}
+[dir="ltr"] .sidebar {
+  order: 1;
+  border-right: none;
+  border-left: 1px solid #ccc;
+}

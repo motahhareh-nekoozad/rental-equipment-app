@@ -1,6 +1,8 @@
+// tailwind.config.js
 import rtl from "tailwindcss-rtl";
 
 export default {
+  darkMode: "class",
   content: [
     "./components/**/*.{vue,js,ts}",
     "./layouts/**/*.{vue,js,ts}",
@@ -10,12 +12,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#B8860B",
-        secondary: "#1B2A49",
-        baseBlack: "	#000000",
-        gold: "#FFD700",
-        white: "#FFFFFF",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        bg: "var(--color-bg)",
+        text: "var(--color-text)",
       },
     },
   },
+  plugins: [rtl],
 };
