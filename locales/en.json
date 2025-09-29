@@ -1,7 +1,34 @@
 {
-  "dark": "Dark",
-  "light": "Light",
-  "equipment": "Equipment",
-  "users": "Users",
-  "settings": "Settings"
+  "Admin": {
+    "Dashboard": "Dashboard",
+    "Category": "Category",
+    "Member": "Member",
+    "Client": "Client",
+    "Product": "Product",
+    "Setting": "Setting",
+    "Ticket": "Ticket",
+    "Equipment": "Equipment",
+    "Users": "Users",
+    "Settings": "Settings"
+  },
+  "Header": {
+    "DarkMode": "Dark Mode",
+    "LightMode": "Light Mode"
+  },
+  "Sidebar": {
+    "Collapse": "Collapse",
+    "Expand": "Expand"
+  },
+  "Common": {
+    "Save": "Save",
+    "Cancel": "Cancel",
+    "Search": "Search"
+  },
+  "Settings": {
+    "Title": "Settings",
+    "Language": "Language",
+    "Theme": "Theme",
+    "Profile": "Profile",
+    "Logout": "Logout"
+  }
 }

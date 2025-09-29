@@ -1,7 +1,34 @@
 {
-  "dark": "دارک",
-  "light": "لایت",
-  "equipment": "تجهیزات",
-  "users": "کاربران",
-  "settings": "تنظیمات"
+  "Admin": {
+    "Dashboard": "داشبورد",
+    "Category": "دسته‌بندی‌ها",
+    "Member": "اعضا",
+    "Client": "مشتریان",
+    "Product": "محصولات",
+    "Setting": "تنظیمات",
+    "Ticket": "تیکت‌ها",
+    "Equipment": "تجهیزات",
+    "Users": "کاربران",
+    "Settings": "تنظیمات"
+  },
+  "Header": {
+    "DarkMode": "حالت تاریک",
+    "LightMode": "حالت روشن"
+  },
+  "Sidebar": {
+    "Collapse": "بستن",
+    "Expand": "باز کردن"
+  },
+  "Common": {
+    "Save": "ذخیره",
+    "Cancel": "لغو",
+    "Search": "جستجو"
+  },
+  "Settings": {
+    "Title": "تنظیمات",
+    "Language": "زبان",
+    "Theme": "پوسته",
+    "Profile": "پروفایل",
+    "Logout": "خروج"
+  }
 }

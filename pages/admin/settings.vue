@@ -39,11 +39,11 @@ const languageOptions = [
 
 <template>
   <div class="p-6 flex flex-col space-y-6 bg-bg text-text min-h-screen">
-    <h1 class="text-2xl font-bold">{{ t("settings") }}</h1>
+    <h1 class="text-2xl font-bold">{{ t("Settings.Title") }}</h1>
 
     <!-- Language Selector -->
     <div class="flex items-center space-x-4 rtl:space-x-reverse">
-      <span>{{ t("language") }}:</span>
+      <span>{{ t("Settings.Language") }}:</span>
       <BaseSelect
         v-model="selectedLocale"
         :options="languageOptions"
