@@ -39,7 +39,7 @@ const languageOptions = [
 
 <template>
   <div class="p-6 flex flex-col space-y-6 bg-bg text-text min-h-screen">
-    <h1 class="text-2xl font-bold">{{ t("Settings.Title") }}</h1>
+    <h1 class="text-2xl font-bold text-primary">{{ t("Settings.Title") }}</h1>
 
     <!-- Language Selector -->
     <div class="flex items-center space-x-4 rtl:space-x-reverse">
