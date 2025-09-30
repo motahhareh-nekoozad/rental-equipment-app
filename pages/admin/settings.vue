@@ -54,7 +54,7 @@ const languageOptions = [
         variant="primary"
         size="md"
       >
-        {{ t("save") }}
+        {{ t("Common.Save") }}
       </BaseButton>
     </div>
   </div>
