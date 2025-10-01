@@ -5,7 +5,7 @@
 /* 🌞 Light Theme */
 :root {
   --color-primary: #fe7743;
-  --color-secondary: #1b2a49;
+  --color-secondary: #e5e7eb;
   --color-bg: #ffffff;
   --color-text: #000000;
 }
@@ -13,7 +13,7 @@
 /* 🌚 Dark Theme */
 .dark {
   --color-primary: #ff4f0f;
-  --color-secondary: #000000;
+  --color-secondary: #1f2937;
   --color-bg: #121212;
   --color-text: #ffffff;
 }

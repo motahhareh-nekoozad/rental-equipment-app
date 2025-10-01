@@ -30,5 +30,13 @@
     "Theme": "پوسته",
     "Profile": "پروفایل",
     "Logout": "خروج"
+  },
+    "User":{
+    "Header":{
+      "categories":"دسته بندی‌ها",
+      "products":"محصولات",
+      "reservations":"رزروها",
+      "payments":"پرداختی‌ها"
+    }
   }
 }
