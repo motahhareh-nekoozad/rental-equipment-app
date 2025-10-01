@@ -17,14 +17,14 @@ watch(() => props.modelValue, (val) => {
 <template>
   <button @click="toggle" aria-label="Toggle dark mode"
     class="relative size-8 rounded-full flex items-center justify-center bg-gray-200 dark:bg-gray-800 shadow-lg transition-colors duration-500 hover:scale-110">
-    <!-- خورشید با glow -->
+    <!--Sun With glow -->
     <Icon icon="mdi:weather-sunny"
       class="absolute w-6 h-6 text-primary drop-shadow-[0_0_4px_theme(colors.primary)] transition-all duration-500 transform"
       :class="{
         'opacity-100 scale-100 rotate-0': !props.modelValue,
         'opacity-0 scale-50 rotate-180': props.modelValue
       }" />
-    <!-- ماه با gradient و subtle shadow -->
+    <!--gradient subtle shadow -->
     <Icon icon="mdi:weather-night"
       class="absolute w-6 h-6 text-white dark:text-gray-200 drop-shadow-[0_0_2px_#ffffff] transition-all duration-500 transform"
       :class="{

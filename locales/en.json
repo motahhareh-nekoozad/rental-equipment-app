@@ -30,5 +30,13 @@
     "Theme": "Theme",
     "Profile": "Profile",
     "Logout": "Logout"
+  },
+  "User":{
+    "Header":{
+      "categories":"Categories",
+      "products":"Products",
+      "reservations":"Reservations",
+      "payments":"Payments"
+    }
   }
 }

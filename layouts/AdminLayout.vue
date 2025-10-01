@@ -16,23 +16,22 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex h-screen flex-col bg-bg text-text transition-colors">
+  <div class="flex h-screen flex-col bg-bg text-text">
     <!-- Header -->
     <AdminHeader
       v-model:collapsed="collapsed"
       v-model:mobileOpen="mobileOpen"
+      v-model:isDark="isDark"
     />
 
     <!-- Main layout -->
-    <div class="flex flex-1 transition-all">
-      <!-- Sidebar -->
+    <div class="flex flex-1">
       <AdminSidebar
         v-model:collapsed="collapsed"
         v-model:mobileOpen="mobileOpen"
       />
 
-      <!-- Main content -->
-      <main class="flex-1 p-6 bg-bg text-primary transition-colors">
+      <main class="flex-1 p-6 bg-bg text-primary">
         <NuxtPage />
       </main>
     </div>
